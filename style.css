@@ -1,0 +1,64 @@
+         
+         .btn-grad {
+            background-image: linear-gradient(to right, #FDFC47 0%, #24FE41  51%, #FDFC47  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            font-size: 35px;
+            letter-spacing: 4px;
+            font-family: "Rokkitt", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+                    }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+          body
+          {
+            background-size: cover;
+          }
+
+          #green
+          {
+            background-color: greenyellow;
+            font-family: cursive;
+            font-size: 20px;
+          }
+
+          #green:hover
+          {
+            background-color: crimson;
+            color: white;
+            transform: scale(1.2);
+            transform: rotate(-30deg);
+          }
+
+          canvas
+          {
+            border: 5px solid white;
+            border-radius: 20px;
+            animation-name: demo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes demo
+          {
+            from {box-shadow: 10px 10px 10px gold;}
+            25% {box-shadow: -10px 10px 10px cyan;}
+            50% {box-shadow: 10px -10px 10px lime;}
+            to {box-shadow: -10px -10px 10px crimson;}
+
+          }
